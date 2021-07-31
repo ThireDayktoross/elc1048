@@ -70,6 +70,17 @@ void tarefa_2(void)
 	for(;;)
 	{
 		b++;
-		TarefaSuspende(2);	
+		TarefaSuspende(2);
+                TarefaContinua(3);
+	}
+}
+
+void tarefa_3(void)
+{
+	volatile uint16_t b = 0;
+	for(;;)
+	{
+		b++;
+		TarefaSuspende(3);
 	}
 }
